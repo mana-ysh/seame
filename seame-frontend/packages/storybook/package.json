@@ -1,0 +1,26 @@
+{
+  "name": "@seame-frontend/storybook",
+  "version": "1.0.0",
+  "description": "mana-ysh",
+  "scripts": {
+    "storybook": "start-storybook -p 9009"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@seame-frontend/core": "1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-docs": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/addons": "^6.4.19",
+    "@storybook/preset-create-react-app": "^1.5.0",
+    "@storybook/react": "^6.4.19",
+    "@storybook/theming": "^6.4.19",
+    "babel-loader": "^8.0.6",
+    "cross-env": "6.0.3"
+  }
+}
