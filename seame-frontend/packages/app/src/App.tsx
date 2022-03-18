@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className={style}>
-      <SearchBar id="app" placeholder="Search..." onChange={onChange} />
+      <SearchBar id="app" placeholder="Search..." autoFocus={true} onChange={onChange} />
       {searchResults?.map((res) => (
         <Card key="item" title={res.title} url={res.url} />
       ))}

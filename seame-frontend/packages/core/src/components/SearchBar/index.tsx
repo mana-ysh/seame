@@ -6,10 +6,11 @@ type Props = {
   id: string;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
+  autoFocus?: boolean;
 };
 
 // FIXME: show icon
-export const SearchBar = ({ id, placeholder, onChange }: Props) => (
+export const SearchBar = ({ id, placeholder, autoFocus, onChange }: Props) => (
   <div className={style}>
     <input
       id={id}
@@ -17,6 +18,7 @@ export const SearchBar = ({ id, placeholder, onChange }: Props) => (
       placeholder={placeholder}
       inputMode={"search"}
       onChange={onChange}
+      autoFocus={autoFocus}
     />
   </div>
 );

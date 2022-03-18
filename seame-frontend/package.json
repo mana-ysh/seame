@@ -28,7 +28,8 @@
     "format": "prettier --write packages/**/*.{ts,tsx}",
     "typecheck": "tsc --noEmit",
     "test": "jest",
-    "storybook": "yarn workspace @seame-frontend/storybook storybook"
+    "storybook": "yarn workspace @seame-frontend/storybook storybook",
+    "clean": "rm -rf node_modules yarn.lock"
   },
   "private": true,
   "workspaces": {
