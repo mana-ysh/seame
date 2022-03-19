@@ -1,0 +1,20 @@
+{
+    "short_name": "seame",
+    "name": "Search everything about me",
+    "icons": [
+      {
+        "src": "assets/favicon.ico",
+        "sizes": "32x32",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/logo330.png",
+        "type": "image/png",
+        "sizes": "330x330"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}
