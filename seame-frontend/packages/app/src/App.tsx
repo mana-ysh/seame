@@ -32,6 +32,9 @@ function App() {
 
   return (
     <div className={style}>
+      <div className={imgStyle}>
+        <img src="/assets/logo330.png" alt="logo"/>
+      </div>
       <SearchBar id="app" placeholder="Input..." autoFocus={true} onChange={onChange} />
       {searchResults?.map((res) => (
         <Card key="item" title={res.title} url={res.url} />
@@ -41,19 +44,19 @@ function App() {
 }
 
 const style = css`
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-      "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  /* centering */
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+`;
 
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-      monospace;
-  }
+const imgStyle = css`
+  padding: 10px;
+  text-align: center;
 `;
 
 export default App;

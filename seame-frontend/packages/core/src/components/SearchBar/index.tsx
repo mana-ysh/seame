@@ -1,6 +1,6 @@
 import * as React from "react";
 import { css } from "@emotion/css";
-import { fontColorMain } from "../../constants";
+import { fontColorMain, fontSizeLarge } from "../../constants";
 
 type Props = {
   id: string;
@@ -24,6 +24,24 @@ export const SearchBar = ({ id, placeholder, autoFocus, onChange }: Props) => (
 );
 
 const style = css`
-  color: ${fontColorMain};
-  font-size: large;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+
+  :hover {
+    box-shadow: 0 1px 3px 0 rgba(32, 33, 36, 0.28);
+  }
+
+  input {
+    color: ${fontColorMain};
+    font-size: ${fontSizeLarge};
+    margin: 0.6em;
+    flex: 1;
+    width: 90%;
+    border: 0;
+    align-items: center;
+  }
+
+  input:focus {
+    outline: none;
+  }
 `;
