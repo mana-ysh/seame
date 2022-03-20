@@ -35,7 +35,7 @@ function App() {
       <div className={imgStyle}>
         <img src="/assets/logo330.png" alt="logo"/>
       </div>
-      <SearchBar id="app" placeholder="Input..." autoFocus={true} onChange={onChange} />
+      <SearchBar id="app" placeholder="Search..." autoFocus={true} onChange={onChange} />
       {searchResults?.map((res) => (
         <Card key="item" title={res.title} url={res.url} />
       ))}
