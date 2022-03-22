@@ -1,6 +1,6 @@
 import * as React from "react";
 import { css } from "@emotion/css";
-import { backgroundColorHover } from "../../constants";
+import { backgroundColorFocus, fontSizeLarge } from "../../constants";
 
 type Props = {
   title: string;
@@ -11,17 +11,25 @@ export const Card = ({ title, url }: Props) => {
   return (
     <div className={style}>
       <a href={url}>
-        <h2>{title}</h2>
+        <p>{title}</p>
       </a>
     </div>
   );
 };
 
 const style = css`
-  border-radius: 5px;
+  margin: 2px;
+  padding: 2px;
+  padding-left: 20px;
+  border-radius: 3px;
+  font-size: ${fontSizeLarge};
   &:hover {
-    background-color: ${backgroundColorHover};
+    background-color: ${backgroundColorFocus};
   }
+  &:focus {
+    background-color: ${backgroundColorFocus};
+  }
+
   a:link,
   a:visited,
   a:hover,
