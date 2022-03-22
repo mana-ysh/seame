@@ -5,7 +5,7 @@
     ]
   },
   "hosting": {
-    "public": "empty",
+    "public": "public",
     "rewrites": [
       {
         "source": "**",
