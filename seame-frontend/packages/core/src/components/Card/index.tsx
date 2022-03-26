@@ -11,13 +11,23 @@ export const Card = ({ title, url }: Props) => {
   return (
     <div className={style}>
       <a href={url}>
-        <p>{title}</p>
+        <div className={innerStyle}><p>{title}</p></div>
       </a>
     </div>
   );
 };
 
 const style = css`
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+`;
+
+const innerStyle = css`
   margin: 2px;
   padding: 2px;
   padding-left: 20px;
@@ -28,13 +38,5 @@ const style = css`
   }
   &:focus {
     background-color: ${backgroundColorFocus};
-  }
-
-  a:link,
-  a:visited,
-  a:hover,
-  a:active {
-    color: inherit;
-    text-decoration: none;
   }
 `;
